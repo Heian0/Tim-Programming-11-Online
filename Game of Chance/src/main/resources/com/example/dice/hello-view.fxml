@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dice.HelloController">
+   <children>
+      <Button fx:id="higherButton" disable="true" layoutX="65.0" layoutY="210.0" mnemonicParsing="false" onAction="#higherClicked" prefHeight="47.0" prefWidth="178.0" text="Higher" />
+      <Button fx:id="lowerButton" disable="true" layoutX="65.0" layoutY="272.0" mnemonicParsing="false" onAction="#lowerClicked" prefHeight="47.0" prefWidth="178.0" text="Lower" />
+      <Button fx:id="rollButton" layoutX="382.0" layoutY="214.0" mnemonicParsing="false" onAction="#RollDice" prefHeight="39.0" prefWidth="82.0" text="Roll Dice" />
+      <TextField fx:id="currentMoneyText" disable="true" layoutX="80.0" layoutY="117.0" onAction="#setCurrentMoney" promptText="Current $:" text="\$100" />
+      <TextField fx:id="currentBetText" disable="true" layoutX="80.0" layoutY="155.0" onAction="#setBetMoney" promptText="Enter bet $:" />
+      <TextField fx:id="diceScoreOneText" disable="true" layoutX="359.0" layoutY="168.0" prefHeight="25.0" prefWidth="45.0" promptText="Roll 1" />
+      <TextField fx:id="diceScoreTwoText" disable="true" layoutX="433.0" layoutY="168.0" prefHeight="25.0" prefWidth="45.0" promptText="Roll 2" />
+      <Button fx:id="continueButton" disable="true" layoutX="229.0" layoutY="361.0" mnemonicParsing="false" onAction="#continueClicked" text="Continue" />
+      <Button fx:id="quitButton" layoutX="313.0" layoutY="361.0" mnemonicParsing="false" onAction="#quitClicked" text="Quit" />
+   </children>
+</Pane>
